@@ -5,6 +5,7 @@
     margin: 0;
     text-decoration: none;
     outline: 0;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -21,11 +22,13 @@ main {
     gap: 20px;
     height: 100vh;
     margin: auto;
+    padding: 20px;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    display: block;
   }
 
 .form-div {
@@ -59,7 +62,7 @@ img {
 }
 
 .form-div form .log-in {
-    width: 96%;
+    width: 90%;
     padding: 0.6rem;
     border-radius: 10px;
     color: white;
@@ -107,7 +110,7 @@ img {
 .sign-up {
     text-align: center;
     border: 1px solid rgba(128, 128, 128, 0.3);
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 20px;
     color: #fafafa;
 }
@@ -168,4 +171,99 @@ footer p{
     margin-top: 20px;
     font-size: 15px;
     color: #d0d3d4;
+}
+
+/* Responsive design */
+
+/* tablet view (768px and below) */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+   .home_img {
+    display: none;
+   }
+
+   .form-div form {
+    padding: 20px;
+   }
+
+   #or {
+    font-size: 13px;
+   }
+
+   #or::before, 
+   #or::after {
+    content: '----------------------';
+   }
+
+   .fb-login, .forgot-pass, .sign-up, .get-app {
+    font-size: 14.5px;
+   }
+
+   .get-app img {
+    width: 30%;
+   }
+
+   footer {
+    text-align: center;
+   }
+
+   footer a {
+    font-size: 12px;
+    margin: 0 5px;
+   }
+
+   footer p {
+    font-size: 14.5px;
+   }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+
+    main {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    form .input {
+        font-size: 10.5px;
+        padding: 8px;
+    }
+
+    form .log-in {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #or {
+        font-size: 12px;
+       }
+    
+    #or::before, 
+    #or::after {
+        content: '------------------------';
+    }
+
+    .fb-login, .forgot-pass, .sign-up, .get-app {
+        font-size: 13px;
+    }
+
+    .get-app img {
+        width: 10%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .form-div form, .sign-up {
+        border: none;
+    }
+
 }
