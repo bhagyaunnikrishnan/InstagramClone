@@ -12,7 +12,8 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: black;
-    font-family: Arial, sans-serif;
+    font-family: Arial, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -59,6 +60,7 @@ img {
     border: 1px solid rgba(128, 128, 128, 0.3);
     margin: 5px;
     background-color: rgb(18, 18, 18);
+    color: white;
 }
 
 .form-div form .log-in {
@@ -80,7 +82,7 @@ img {
 
 #or::before, 
 #or::after {
-    content: '---------------------';
+    content: '----------------';
     color: rgba(128, 128, 128, 0.7);
     margin: 0 10px;
 }

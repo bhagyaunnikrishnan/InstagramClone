@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Clone</title>
+
+    <!-- Feather icons link -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Link css file -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Instagram icon link -->
+    <link data-default-icon="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png" 
+    rel="icon" sizes="192x192" href="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png">
     
     <!-- boxicons link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -22,7 +31,7 @@
                 <img class="instaLogo" src="images/ig.png" alt="logo">
                 <input type="text" class="input" placeholder="Phone number, username or email address" required>
                 <input type="password" class="input" placeholder="Password" required>
-                <button class="log-in">Log in</button>
+                <button class="log-in" onclick="redirectToHome()">Log in</button>
                 <p id="or">OR</p>
                 <a href="https://www.facebook.com/" class="fb-login"><i class='bx bxl-facebook-square'></i> Log in with Facebook</a>
                 <a href="#" class="forgot-pass">Forgotten your password?</a>
@@ -49,6 +58,15 @@
         
         <p>Instagram Clone © 2025 by Bhagya Unnikrishnan</p>
     </footer>
+
+
+    <script>
+        feather.replace();
+        
+        function redirectToHome() {
+            window.location.href = "home.html";
+        }
+    </script>
     
 </body>
 </html>
